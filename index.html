@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #e3e6e6;
+    }
+
+    header {
+      background-color: #131921;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff9900;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    nav {
+      background-color: #232f3e;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      gap: 15px;
+      font-size: 14px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      color: #b12704;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #232f3e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">amazon</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Amazon">
+    </div>
+    <div class="cart">Cart 🛒</div>
+  </header>
+
+  <nav>
+    <div>Home</div>
+    <div>Deals</div>
+    <div>Mobiles</div>
+    <div>Electronics</div>
+    <div>Fashion</div>
+  </nav>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x180?text=Product+1" alt="Product 1">
+      <h3>Wireless Headphones</h3>
+      <p>$29.99</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x180?text=Product+2" alt="Product 2">
+      <h3>Smartphone Case</h3>
+      <p>$12.49</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x180?text=Product+3" alt="Product 3">
+      <h3>Bluetooth Speaker</h3>
+      <p>$45.99</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x180?text=Product+4" alt="Product 4">
+      <h3>Smart Watch</h3>
+      <p>$59.00</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x180?text=Product+5" alt="Product 5">
+      <h3>USB-C Charger</h3>
+      <p>$15.49</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Amazon Clone. Designed in HTML & CSS only.
+  </footer>
+
+</body>
+</html>
